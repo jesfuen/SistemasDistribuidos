@@ -1,5 +1,12 @@
 package main
 
+import "fmt"
+
+type Workshop struct {
+	Mecanics []Mechanic
+	Capacity [2]Car
+}
+
 type Mechanic struct {
 	Id              int
 	Name            string
@@ -10,7 +17,7 @@ type Mechanic struct {
 
 type Incidence struct {
 	Id          int
-	Mecanic     Mechanic
+	Mecanics    []Mechanic
 	Type        string
 	Priority    string
 	Description string
@@ -18,7 +25,7 @@ type Incidence struct {
 }
 
 type Car struct {
-	RegistrationNumber int
+	RegistrationNumber string
 	Brand              string
 	Model              string
 	EntryDate          string
@@ -32,4 +39,20 @@ type Client struct {
 	PhoneNumber string
 	Email       string
 	Car         Car
+}
+
+func (w *Workshop) assigncar(c Car) {
+	for i := 0; i < len(w.Capacity); i++ {
+		if w.Capacity[i].Brand == "" {
+			w.Capacity[i] = c
+			fmt.Printf("El coche %s %s asignado correctamente al taller\n", c.Brand, c.Model)
+			return
+		}
+	}
+
+	fmt.Println("No hay espacio en el taller.")
+}
+
+func main() {
+
 }
