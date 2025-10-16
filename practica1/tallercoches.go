@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// Data structures
+
 type Workshop struct {
 	Mecanics []Mechanic
 	Capacity [2]Car
@@ -38,10 +40,12 @@ type Client struct {
 	Name        string
 	PhoneNumber string
 	Email       string
-	Car         Car
+	Cars        []Car
 }
 
-func (w *Workshop) assigncar(c Car) {
+// Workshop functions
+
+func (w *Workshop) assignCar(c Car) {
 	for i := 0; i < len(w.Capacity); i++ {
 		if w.Capacity[i].Brand == "" {
 			w.Capacity[i] = c
@@ -51,6 +55,24 @@ func (w *Workshop) assigncar(c Car) {
 	}
 
 	fmt.Println("No hay espacio en el taller.")
+}
+
+func (w Workshop) showStatus() {
+
+	// Local vars
+	var occupied int = 0
+	var free int = 0
+
+	for i := 0; i < len(w.Capacity); i++ {
+		if w.Capacity[i].Brand == "" {
+			free++
+		} else {
+			occupied++
+		}
+	}
+
+	fmt.Printf("Hay %d plazas libres y %d plazas ocupadas en el taller", free, occupied)
+
 }
 
 func main() {
