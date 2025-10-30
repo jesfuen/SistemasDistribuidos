@@ -58,6 +58,10 @@ func remove[T any](s []T, i int) []T {
 	return s[:len(s)-1]
 }
 
+func vehicleNotFound(r string) {
+	fmt.Printf("El vehiculo con matricula %s no esta registrado.\n", r)
+}
+
 // Workshop functions
 
 func (w *Workshop) assignCar(c Car) {
@@ -93,7 +97,7 @@ func (w Workshop) showStatus() {
 
 func (w *Workshop) createClient() {
 
-	var matricula string
+	var registrationNumber string
 	var c Client
 
 	fmt.Print("Introduzca el nombre del cliente: ")
@@ -103,12 +107,12 @@ func (w *Workshop) createClient() {
 	fmt.Print("Introduzca el email del cliente: ")
 	fmt.Scanln(&c.Email)
 	fmt.Print("Introduzca la matricula del vehiculo: ")
-	fmt.Scanln(&matricula)
+	fmt.Scanln(&registrationNumber)
 
 	var carExists bool = false
 
 	for i := range w.Cars {
-		if w.Cars[i].RegistrationNumber == matricula {
+		if w.Cars[i].RegistrationNumber == registrationNumber {
 			c.Cars = append(c.Cars, w.Cars[i])
 			carExists = true
 			break
@@ -116,7 +120,7 @@ func (w *Workshop) createClient() {
 	}
 
 	if !carExists {
-		fmt.Printf("El coche con matricula %s no existe en el taller.", matricula)
+		vehicleNotFound(registrationNumber)
 	} else {
 		fmt.Println("Cliente creado correctamente.")
 		c.Id = 1 + len(w.Clients)
@@ -209,6 +213,113 @@ func (w *Workshop) modifyClient() {
 
 // Car manage functions
 
+func (w *Workshop) createCar() {
+	var c Car
+
+	fmt.Print("Introduzca la matricula del vehiculo: ")
+	fmt.Scan(&c.RegistrationNumber)
+	fmt.Print("Introduzca la marca del vehiculo: ")
+	fmt.Scan(&c.Brand)
+	fmt.Print("Introduzca el modelo del vehiculo: ")
+	fmt.Scan(&c.Model)
+	fmt.Print("Introduzca la fecha de entrada: ")
+	fmt.Scan(&c.EntryDate)
+	fmt.Print("Introduzca la fecha estimanda de salida: ")
+	fmt.Scan(&c.DepartureDate)
+
+	for i := range w.Cars {
+		if w.Cars[i].RegistrationNumber == c.RegistrationNumber {
+			fmt.Printf("El vehiculo con matricula: %s ya existe.\n", c.RegistrationNumber)
+			break
+		} else {
+			w.Cars = append(w.Cars, c)
+			fmt.Printf("El vehiculo con matricula: %s se ha registrado correctamente.\n", c.RegistrationNumber)
+			break
+		}
+	}
+}
+
+func (w *Workshop) removeCar() {
+	var registrationNumber string
+	var found bool
+
+	fmt.Print("Introduzca la matricula del vehiculo a eliminar: ")
+	fmt.Scan(&registrationNumber)
+
+	for i := range w.Cars {
+		if w.Cars[i].RegistrationNumber == registrationNumber {
+			w.Cars = remove(w.Cars, i)
+			fmt.Printf("El vehiculo con matricula: %s ha sido eliminado correctamente.\n", registrationNumber)
+			break
+		}
+	}
+
+	if !found {
+		vehicleNotFound(registrationNumber)
+	}
+
+}
+
+func (w *Workshop) modifyCar() {
+	var registrationNumber string
+	var option int
+	var found bool
+
+	fmt.Print("Introduce la matricula del vehiculo: ")
+	fmt.Scan(&registrationNumber)
+
+	for i := range w.Cars {
+		if registrationNumber == w.Cars[i].RegistrationNumber {
+			found = true
+			fmt.Println("Seleccione una opcion:")
+			fmt.Println("1- Modificar matricula")
+			fmt.Println("2- Modificar marca")
+			fmt.Println("3- Modificar modelo")
+			fmt.Print("Opcion: ")
+			fmt.Scan(&option)
+
+			switch option {
+			case 1:
+				fmt.Print("Introduzca la matricula: ")
+				fmt.Scan(&w.Cars[i].RegistrationNumber)
+			case 2:
+				fmt.Print("Introduzca la marca del vehiculo: ")
+				fmt.Scan(&w.Cars[i].Brand)
+			case 3:
+				fmt.Print("Introduzca el modelo del vehiculo: ")
+				fmt.Scan(w.Cars[i].Model)
+			}
+			break
+		}
+	}
+
+	if !found {
+		vehicleNotFound(registrationNumber)
+	}
+}
+
+func (w *Workshop) showCarInfo() {
+
+	var r string
+	var found bool
+
+	fmt.Print("Introduzca la matricula del vehiculo: ")
+	fmt.Scan(&r)
+
+	for _, c := range w.Cars {
+		if c.RegistrationNumber == r {
+			fmt.Printf("Matricula %s\nMarca %s\nModelo %s\nFecha de entrada: %s\nFecha estimada de salida: %s\n", c.RegistrationNumber, c.Brand, c.Model, c.EntryDate, c.DepartureDate)
+			break
+		}
+	}
+	if !found {
+		vehicleNotFound(r)
+	}
+
+}
+
+// Incidence functions
+
 // Main function
 
 func main() {
@@ -223,13 +334,7 @@ func main() {
 
 	workshop.Cars = make([]Car, 2*len(workshop.Mecanics))
 
-	car1 := Car{
-		RegistrationNumber: "1234ABC",
-		Brand:              "Toyota",
-		Model:              "Corolla",
-		EntryDate:          "2024-06-01",
-	}
-	workshop.assignCar(car1)
+	workshop.createCar()
 
 	workshop.showStatus()
 
@@ -246,6 +351,4 @@ func main() {
 	workshop.removeClient()
 
 	fmt.Printf("El taller tiene %d clientes registrados.\n", len(workshop.Clients))
-
-	workshop.showStatus()
 }
