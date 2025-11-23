@@ -1,0 +1,469 @@
+=== RUN   TestDoubleCarLoad
+
+======================================================================
+TEST 1: DUPLICAR CANTIDAD DE COCHES
+======================================================================
+
+=== RUN   TestDoubleCarLoad/10_coches_mecanica
+Coche TEST-001 añadido - Mecánicos disponibles: 1
+Dispatcher iniciado - Esperando coches...
+Coche TEST-001 asignado a MecMotor-1 (Motor) - Esperó: 0.00s - Trabajo: 5.7s
+Mecánico MecMotor-1 asignado a la incidencia.
+Coche TEST-002 en cola de espera (Posición: 1)
+Coche TEST-003 en cola de espera (Posición: 1)
+Coche TEST-004 en cola de espera (Posición: 1)
+Coche TEST-005 en cola de espera (Posición: 1)
+Coche TEST-006 en cola de espera (Posición: 1)
+Coche TEST-007 en cola de espera (Posición: 1)
+Coche TEST-008 en cola de espera (Posición: 1)
+Coche TEST-009 en cola de espera (Posición: 1)
+Coche TEST-010 en cola de espera (Posición: 1)
+MecMotor-1 terminó trabajo en TEST-001 (5.7s) - Total coche: 5.7s
+Coche TEST-002 asignado a MecMotor-1 (Motor) - Esperó: 5.59s - Trabajo: 4.5s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-002 (4.5s) - Total coche: 4.5s
+Coche TEST-003 asignado a MecMotor-1 (Motor) - Esperó: 9.99s - Trabajo: 5.4s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-003 (5.4s) - Total coche: 5.4s
+Coche TEST-004 asignado a MecMotor-1 (Motor) - Esperó: 15.31s - Trabajo: 5.2s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-004 (5.2s) - Total coche: 5.2s
+Coche TEST-005 asignado a MecMotor-1 (Motor) - Esperó: 20.43s - Trabajo: 5.7s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-005 (5.7s) - Total coche: 5.7s
+Coche TEST-006 asignado a MecMotor-1 (Motor) - Esperó: 26.03s - Trabajo: 4.9s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-006 (4.9s) - Total coche: 4.9s
+Coche TEST-007 asignado a MecMotor-1 (Motor) - Esperó: 30.83s - Trabajo: 4.5s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-007 (4.5s) - Total coche: 4.5s
+Coche TEST-008 asignado a MecMotor-1 (Motor) - Esperó: 35.26s - Trabajo: 4.5s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-008 (4.5s) - Total coche: 4.5s
+Coche TEST-009 asignado a MecMotor-1 (Motor) - Esperó: 39.70s - Trabajo: 4.3s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-009 (4.3s) - Total coche: 4.3s
+Coche TEST-010 asignado a MecMotor-1 (Motor) - Esperó: 43.88s - Trabajo: 5.3s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-010 (5.3s) - Total coche: 5.3s
+    concurrent_workshop_test.go:60: 
+         RESULTADOS - 10 COCHES:
+    concurrent_workshop_test.go:61:    Tiempo total: 61.00 segundos
+    concurrent_workshop_test.go:62:    Mecánicos totales: 3
+    concurrent_workshop_test.go:63:    Mecánicos contratados: 0
+    concurrent_workshop_test.go:64:    Mecánicos ocupados al final: 0
+    concurrent_workshop_test.go:65:    Mecánicos disponibles: 3
+Dispatcher detenido
+=== RUN   TestDoubleCarLoad/20_coches_mecanica
+Coche TEST-001 añadido - Mecánicos disponibles: 1
+Dispatcher iniciado - Esperando coches...
+Coche TEST-001 asignado a MecMotor-1 (Motor) - Esperó: 0.00s - Trabajo: 5.1s
+Mecánico MecMotor-1 asignado a la incidencia.
+Coche TEST-002 en cola de espera (Posición: 1)
+Coche TEST-003 en cola de espera (Posición: 1)
+Coche TEST-004 en cola de espera (Posición: 1)
+Coche TEST-005 en cola de espera (Posición: 1)
+Coche TEST-006 en cola de espera (Posición: 1)
+Coche TEST-007 en cola de espera (Posición: 1)
+Coche TEST-008 en cola de espera (Posición: 1)
+Coche TEST-009 en cola de espera (Posición: 1)
+Coche TEST-010 en cola de espera (Posición: 1)
+Coche TEST-011 en cola de espera (Posición: 1)
+Coche TEST-012 en cola de espera (Posición: 1)
+Coche TEST-013 en cola de espera (Posición: 1)
+Coche TEST-014 en cola de espera (Posición: 1)
+Coche TEST-015 en cola de espera (Posición: 1)
+Coche TEST-016 en cola de espera (Posición: 1)
+Coche TEST-017 en cola de espera (Posición: 1)
+Coche TEST-018 en cola de espera (Posición: 1)
+Coche TEST-019 en cola de espera (Posición: 1)
+Coche TEST-020 en cola de espera (Posición: 1)
+MecMotor-1 terminó trabajo en TEST-001 (5.1s) - Total coche: 5.1s
+Coche TEST-002 asignado a MecMotor-1 (Motor) - Esperó: 5.04s - Trabajo: 5.4s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-002 (5.4s) - Total coche: 5.4s
+Coche TEST-003 asignado a MecMotor-1 (Motor) - Esperó: 10.36s - Trabajo: 4.5s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-003 (4.5s) - Total coche: 4.5s
+Coche TEST-004 asignado a MecMotor-1 (Motor) - Esperó: 14.81s - Trabajo: 4.5s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-004 (4.5s) - Total coche: 4.5s
+Coche TEST-005 asignado a MecMotor-1 (Motor) - Esperó: 19.23s - Trabajo: 5.7s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-005 (5.7s) - Total coche: 5.7s
+Coche TEST-006 asignado a MecMotor-1 (Motor) - Esperó: 24.85s - Trabajo: 6.0s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-006 (6.0s) - Total coche: 6.0s
+Coche TEST-007 asignado a MecMotor-1 (Motor) - Esperó: 30.74s - Trabajo: 4.4s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-007 (4.4s) - Total coche: 4.4s
+Coche TEST-008 asignado a MecMotor-1 (Motor) - Esperó: 35.02s - Trabajo: 5.7s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-008 (5.7s) - Total coche: 5.7s
+Coche TEST-009 asignado a MecMotor-1 (Motor) - Esperó: 40.58s - Trabajo: 5.7s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-009 (5.7s) - Total coche: 5.7s
+Coche TEST-010 asignado a MecMotor-1 (Motor) - Esperó: 46.15s - Trabajo: 5.3s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-010 (5.3s) - Total coche: 5.3s
+Coche TEST-011 asignado a MecMotor-1 (Motor) - Esperó: 51.36s - Trabajo: 4.3s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-011 (4.3s) - Total coche: 4.3s
+Coche TEST-012 asignado a MecMotor-1 (Motor) - Esperó: 55.57s - Trabajo: 5.6s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-012 (5.6s) - Total coche: 5.6s
+Coche TEST-013 asignado a MecMotor-1 (Motor) - Esperó: 61.06s - Trabajo: 5.7s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-013 (5.7s) - Total coche: 5.7s
+Coche TEST-014 asignado a MecMotor-1 (Motor) - Esperó: 66.66s - Trabajo: 4.0s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-014 (4.0s) - Total coche: 4.0s
+Coche TEST-015 asignado a MecMotor-1 (Motor) - Esperó: 70.56s - Trabajo: 4.3s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-015 (4.3s) - Total coche: 4.3s
+Coche TEST-016 asignado a MecMotor-1 (Motor) - Esperó: 74.71s - Trabajo: 4.2s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-016 (4.2s) - Total coche: 4.2s
+Coche TEST-017 asignado a MecMotor-1 (Motor) - Esperó: 78.78s - Trabajo: 5.9s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-017 (5.9s) - Total coche: 5.9s
+Coche TEST-018 asignado a MecMotor-1 (Motor) - Esperó: 84.57s - Trabajo: 5.2s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-018 (5.2s) - Total coche: 5.2s
+Coche TEST-019 asignado a MecMotor-1 (Motor) - Esperó: 89.64s - Trabajo: 4.1s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-019 (4.1s) - Total coche: 4.1s
+Coche TEST-020 asignado a MecMotor-1 (Motor) - Esperó: 93.63s - Trabajo: 4.0s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en TEST-020 (4.0s) - Total coche: 4.0s
+    concurrent_workshop_test.go:109: 
+         RESULTADOS - 20 COCHES:
+    concurrent_workshop_test.go:110:    Tiempo total: 122.03 segundos
+    concurrent_workshop_test.go:111:    Mecánicos totales: 3
+    concurrent_workshop_test.go:112:    Mecánicos contratados: 0
+    concurrent_workshop_test.go:113:    Mecánicos ocupados al final: 0
+    concurrent_workshop_test.go:114:    Mecánicos disponibles: 3
+Dispatcher detenido
+--- PASS: TestDoubleCarLoad (183.04s)
+    --- PASS: TestDoubleCarLoad/10_coches_mecanica (61.01s)
+    --- PASS: TestDoubleCarLoad/20_coches_mecanica (122.03s)
+=== RUN   TestDoubleMechanicStaff
+
+======================================================================
+TEST 2: DUPLICAR PLANTILLA DE MECÁNICOS
+======================================================================
+
+=== RUN   TestDoubleMechanicStaff/3_mecanicos
+Coche CAR-001 añadido - Mecánicos disponibles: 1
+Dispatcher iniciado - Esperando coches...
+Coche CAR-001 asignado a MecElec-1 (Electricidad) - Esperó: 0.00s - Trabajo: 7.0s
+Mecánico MecElec-1 asignado a la incidencia.
+Coche CAR-002 añadido - Mecánicos disponibles: 1
+Coche CAR-002 asignado a MecCarr-1 (Carrocería) - Esperó: 0.00s - Trabajo: 11.0s
+Mecánico MecCarr-1 asignado a la incidencia.
+Coche CAR-003 añadido - Mecánicos disponibles: 1
+Coche CAR-003 asignado a MecMotor-1 (Motor) - Esperó: 0.00s - Trabajo: 5.4s
+Mecánico MecMotor-1 asignado a la incidencia.
+Coche CAR-004 en cola de espera (Posición: 1)
+Coche CAR-005 en cola de espera (Posición: 1)
+Coche CAR-006 en cola de espera (Posición: 1)
+Coche CAR-007 en cola de espera (Posición: 1)
+Coche CAR-008 en cola de espera (Posición: 1)
+Coche CAR-009 en cola de espera (Posición: 1)
+Coche CAR-010 en cola de espera (Posición: 1)
+Coche CAR-011 en cola de espera (Posición: 1)
+Coche CAR-012 en cola de espera (Posición: 1)
+Coche CAR-013 en cola de espera (Posición: 1)
+Coche CAR-014 en cola de espera (Posición: 1)
+Coche CAR-015 en cola de espera (Posición: 1)
+MecMotor-1 terminó trabajo en CAR-003 (5.4s) - Total coche: 5.4s
+Coche CAR-006 asignado a MecMotor-1 (Motor) - Esperó: 5.07s - Trabajo: 5.0s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-001 (7.0s) - Total coche: 7.0s
+Coche CAR-004 asignado a MecElec-1 (Electricidad) - Esperó: 6.66s - Trabajo: 6.5s
+Mecánico MecElec-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en CAR-006 (5.0s) - Total coche: 5.0s
+Coche CAR-009 asignado a MecMotor-1 (Motor) - Esperó: 9.73s - Trabajo: 5.0s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-002 (11.0s) - Total coche: 11.0s
+Coche CAR-005 asignado a MecCarr-1 (Carrocería) - Esperó: 10.71s - Trabajo: 10.4s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-004 (6.5s) - Total coche: 6.5s
+Coche CAR-007 asignado a MecElec-1 (Electricidad) - Esperó: 12.88s - Trabajo: 6.6s
+Mecánico MecElec-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en CAR-009 (5.0s) - Total coche: 5.0s
+Coche CAR-012 asignado a MecMotor-1 (Motor) - Esperó: 14.47s - Trabajo: 5.6s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-007 (6.6s) - Total coche: 6.6s
+Coche CAR-010 asignado a MecElec-1 (Electricidad) - Esperó: 19.16s - Trabajo: 7.4s
+Mecánico MecElec-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en CAR-012 (5.6s) - Total coche: 5.6s
+Coche CAR-015 asignado a MecMotor-1 (Motor) - Esperó: 19.76s - Trabajo: 4.1s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-005 (10.4s) - Total coche: 10.4s
+Coche CAR-008 asignado a MecCarr-1 (Carrocería) - Esperó: 20.86s - Trabajo: 10.7s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en CAR-015 (4.1s) - Total coche: 4.1s
+MecElec-1 terminó trabajo en CAR-010 (7.4s) - Total coche: 7.4s
+Coche CAR-013 asignado a MecElec-1 (Electricidad) - Esperó: 26.26s - Trabajo: 6.7s
+Mecánico MecElec-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-008 (10.7s) - Total coche: 10.7s
+Coche CAR-011 asignado a MecCarr-1 (Carrocería) - Esperó: 31.26s - Trabajo: 10.8s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-013 (6.7s) - Total coche: 6.7s
+MecCarr-1 terminó trabajo en CAR-011 (10.8s) - Total coche: 10.8s
+Coche CAR-014 asignado a MecCarr-1 (Carrocería) - Esperó: 41.74s - Trabajo: 11.9s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-014 (11.9s) - Total coche: 11.9s
+    concurrent_workshop_test.go:172: 
+         RESULTADOS - 3 MECÁNICOS:
+    concurrent_workshop_test.go:173:    Tiempo total: 121.52 segundos
+    concurrent_workshop_test.go:174:    Mecánicos totales: 3
+    concurrent_workshop_test.go:175:    Mecánicos contratados: 0
+    concurrent_workshop_test.go:176:    Mecánicos ocupados al final: 0
+    concurrent_workshop_test.go:177:    Mecánicos disponibles: 3
+=== RUN   TestDoubleMechanicStaff/6_mecanicos
+Dispatcher detenido
+Dispatcher iniciado - Esperando coches...
+Coche CAR-001 añadido - Mecánicos disponibles: 2
+Coche CAR-001 asignado a MecElec-1 (Electricidad) - Esperó: 0.00s - Trabajo: 7.6s
+Mecánico MecElec-1 asignado a la incidencia.
+Coche CAR-002 añadido - Mecánicos disponibles: 2
+Coche CAR-002 asignado a MecCarr-1 (Carrocería) - Esperó: 0.00s - Trabajo: 10.0s
+Mecánico MecCarr-1 asignado a la incidencia.
+Coche CAR-003 añadido - Mecánicos disponibles: 2
+Coche CAR-003 asignado a MecMotor-1 (Motor) - Esperó: 0.00s - Trabajo: 4.9s
+Mecánico MecMotor-1 asignado a la incidencia.
+Coche CAR-004 añadido - Mecánicos disponibles: 1
+Coche CAR-004 asignado a MecElec-2 (Electricidad) - Esperó: 0.00s - Trabajo: 7.6s
+Mecánico MecElec-2 asignado a la incidencia.
+Coche CAR-005 añadido - Mecánicos disponibles: 1
+Coche CAR-005 asignado a MecCarr-2 (Carrocería) - Esperó: 0.00s - Trabajo: 11.1s
+Mecánico MecCarr-2 asignado a la incidencia.
+Coche CAR-006 añadido - Mecánicos disponibles: 1
+Coche CAR-006 asignado a MecMotor-2 (Motor) - Esperó: 0.00s - Trabajo: 4.8s
+Mecánico MecMotor-2 asignado a la incidencia.
+Coche CAR-007 en cola de espera (Posición: 1)
+Coche CAR-008 en cola de espera (Posición: 1)
+Coche CAR-009 en cola de espera (Posición: 1)
+Coche CAR-010 en cola de espera (Posición: 1)
+Coche CAR-011 en cola de espera (Posición: 1)
+Coche CAR-012 en cola de espera (Posición: 1)
+Coche CAR-013 en cola de espera (Posición: 1)
+Coche CAR-014 en cola de espera (Posición: 1)
+Coche CAR-015 en cola de espera (Posición: 1)
+MecMotor-1 terminó trabajo en CAR-003 (4.9s) - Total coche: 4.9s
+Coche CAR-009 asignado a MecMotor-1 (Motor) - Esperó: 4.28s - Trabajo: 5.2s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-2 terminó trabajo en CAR-006 (4.8s) - Total coche: 4.8s
+Coche CAR-012 asignado a MecMotor-2 (Motor) - Esperó: 4.20s - Trabajo: 5.3s
+Mecánico MecMotor-2 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-001 (7.6s) - Total coche: 7.6s
+Coche CAR-007 asignado a MecElec-1 (Electricidad) - Esperó: 7.02s - Trabajo: 7.1s
+Mecánico MecElec-1 asignado a la incidencia.
+MecElec-2 terminó trabajo en CAR-004 (7.6s) - Total coche: 7.6s
+Coche CAR-010 asignado a MecElec-2 (Electricidad) - Esperó: 7.05s - Trabajo: 6.2s
+Mecánico MecElec-2 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-002 (10.0s) - Total coche: 10.0s
+Coche CAR-008 asignado a MecCarr-1 (Carrocería) - Esperó: 9.43s - Trabajo: 11.9s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en CAR-009 (5.2s) - Total coche: 5.2s
+Coche CAR-015 asignado a MecMotor-1 (Motor) - Esperó: 8.89s - Trabajo: 4.7s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-2 terminó trabajo en CAR-012 (5.3s) - Total coche: 5.3s
+MecCarr-2 terminó trabajo en CAR-005 (11.1s) - Total coche: 11.1s
+Coche CAR-011 asignado a MecCarr-2 (Carrocería) - Esperó: 10.53s - Trabajo: 12.0s
+Mecánico MecCarr-2 asignado a la incidencia.
+MecElec-2 terminó trabajo en CAR-010 (6.2s) - Total coche: 6.2s
+Coche CAR-013 asignado a MecElec-2 (Electricidad) - Esperó: 12.99s - Trabajo: 7.6s
+Mecánico MecElec-2 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-007 (7.1s) - Total coche: 7.1s
+MecMotor-1 terminó trabajo en CAR-015 (4.7s) - Total coche: 4.7s
+MecElec-2 terminó trabajo en CAR-013 (7.6s) - Total coche: 7.6s
+MecCarr-1 terminó trabajo en CAR-008 (11.9s) - Total coche: 11.9s
+Coche CAR-014 asignado a MecCarr-1 (Carrocería) - Esperó: 20.72s - Trabajo: 10.2s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecCarr-2 terminó trabajo en CAR-011 (12.0s) - Total coche: 12.0s
+MecCarr-1 terminó trabajo en CAR-014 (10.2s) - Total coche: 10.2s
+    concurrent_workshop_test.go:221: 
+         RESULTADOS - 6 MECÁNICOS:
+    concurrent_workshop_test.go:222:    Tiempo total: 91.56 segundos
+    concurrent_workshop_test.go:223:    Mecánicos totales: 6
+    concurrent_workshop_test.go:224:    Mecánicos contratados: 0
+    concurrent_workshop_test.go:225:    Mecánicos ocupados al final: 0
+    concurrent_workshop_test.go:226:    Mecánicos disponibles: 6
+--- PASS: TestDoubleMechanicStaff (213.08s)
+    --- PASS: TestDoubleMechanicStaff/3_mecanicos (121.52s)
+    --- PASS: TestDoubleMechanicStaff/6_mecanicos (91.56s)
+=== RUN   TestDifferentSpecialityDistribution
+
+======================================================================
+TEST 3: DIFERENTES DISTRIBUCIONES DE ESPECIALIDADES
+======================================================================
+
+=== RUN   TestDifferentSpecialityDistribution/3_mecanica_1_electrica_1_carroceria
+Coche CAR-001 añadido - Mecánicos disponibles: 1
+Dispatcher detenido
+Dispatcher iniciado - Esperando coches...
+Coche CAR-001 asignado a MecElec-1 (Electricidad) - Esperó: 0.00s - Trabajo: 7.9s
+Mecánico MecElec-1 asignado a la incidencia.
+Coche CAR-002 añadido - Mecánicos disponibles: 1
+Coche CAR-002 asignado a MecCarr-1 (Carrocería) - Esperó: 0.00s - Trabajo: 10.4s
+Mecánico MecCarr-1 asignado a la incidencia.
+Coche CAR-003 añadido - Mecánicos disponibles: 3
+Coche CAR-003 asignado a MecMotor-1 (Motor) - Esperó: 0.00s - Trabajo: 5.0s
+Mecánico MecMotor-1 asignado a la incidencia.
+Coche CAR-004 en cola de espera (Posición: 1)
+Coche CAR-005 en cola de espera (Posición: 1)
+Coche CAR-006 añadido - Mecánicos disponibles: 2
+Coche CAR-006 asignado a MecMotor-2 (Motor) - Esperó: 0.00s - Trabajo: 5.9s
+Mecánico MecMotor-2 asignado a la incidencia.
+Coche CAR-007 en cola de espera (Posición: 1)
+Coche CAR-008 en cola de espera (Posición: 1)
+Coche CAR-009 añadido - Mecánicos disponibles: 1
+Coche CAR-009 asignado a MecMotor-3 (Motor) - Esperó: 0.00s - Trabajo: 5.5s
+Mecánico MecMotor-3 asignado a la incidencia.
+Coche CAR-010 en cola de espera (Posición: 1)
+Coche CAR-011 en cola de espera (Posición: 1)
+Coche CAR-012 en cola de espera (Posición: 1)
+Coche CAR-013 en cola de espera (Posición: 1)
+Coche CAR-014 en cola de espera (Posición: 1)
+Coche CAR-015 en cola de espera (Posición: 1)
+MecMotor-1 terminó trabajo en CAR-003 (5.0s) - Total coche: 5.0s
+Coche CAR-012 asignado a MecMotor-1 (Motor) - Esperó: 4.13s - Trabajo: 4.8s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-3 terminó trabajo en CAR-009 (5.5s) - Total coche: 5.5s
+Coche CAR-015 asignado a MecMotor-3 (Motor) - Esperó: 4.88s - Trabajo: 4.3s
+Mecánico MecMotor-3 asignado a la incidencia.
+MecMotor-2 terminó trabajo en CAR-006 (5.9s) - Total coche: 5.9s
+MecElec-1 terminó trabajo en CAR-001 (7.9s) - Total coche: 7.9s
+Coche CAR-004 asignado a MecElec-1 (Electricidad) - Esperó: 7.65s - Trabajo: 7.7s
+Mecánico MecElec-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en CAR-012 (4.8s) - Total coche: 4.8s
+MecCarr-1 terminó trabajo en CAR-002 (10.4s) - Total coche: 10.4s
+Coche CAR-005 asignado a MecCarr-1 (Carrocería) - Esperó: 10.05s - Trabajo: 10.8s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecMotor-3 terminó trabajo en CAR-015 (4.3s) - Total coche: 4.3s
+MecElec-1 terminó trabajo en CAR-004 (7.7s) - Total coche: 7.7s
+Coche CAR-007 asignado a MecElec-1 (Electricidad) - Esperó: 15.10s - Trabajo: 6.8s
+Mecánico MecElec-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-005 (10.8s) - Total coche: 10.8s
+Coche CAR-008 asignado a MecCarr-1 (Carrocería) - Esperó: 20.54s - Trabajo: 12.0s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-007 (6.8s) - Total coche: 6.8s
+Coche CAR-010 asignado a MecElec-1 (Electricidad) - Esperó: 21.61s - Trabajo: 6.2s
+Mecánico MecElec-1 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-010 (6.2s) - Total coche: 6.2s
+Coche CAR-013 asignado a MecElec-1 (Electricidad) - Esperó: 27.48s - Trabajo: 6.2s
+Mecánico MecElec-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-008 (12.0s) - Total coche: 12.0s
+Coche CAR-011 asignado a MecCarr-1 (Carrocería) - Esperó: 32.24s - Trabajo: 11.8s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-013 (6.2s) - Total coche: 6.2s
+MecCarr-1 terminó trabajo en CAR-011 (11.8s) - Total coche: 11.8s
+Coche CAR-014 asignado a MecCarr-1 (Carrocería) - Esperó: 43.70s - Trabajo: 11.7s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-014 (11.7s) - Total coche: 11.7s
+    concurrent_workshop_test.go:283: 
+         RESULTADOS - 3 MECÁNICA, 1 ELÉCTRICA, 1 CARROCERÍA:
+    concurrent_workshop_test.go:284:    Tiempo total: 121.56 segundos
+    concurrent_workshop_test.go:285:    Mecánicos totales: 5
+    concurrent_workshop_test.go:286:    Mecánicos contratados: 0
+    concurrent_workshop_test.go:287:    Mecánicos ocupados al final: 0
+    concurrent_workshop_test.go:288:    Mecánicos disponibles: 5
+=== RUN   TestDifferentSpecialityDistribution/1_mecanica_3_electrica_3_carroceria
+Coche CAR-001 añadido - Mecánicos disponibles: 3
+Dispatcher detenido
+Dispatcher iniciado - Esperando coches...
+Coche CAR-001 asignado a MecElec-1 (Electricidad) - Esperó: 0.00s - Trabajo: 6.4s
+Mecánico MecElec-1 asignado a la incidencia.
+Coche CAR-002 añadido - Mecánicos disponibles: 3
+Coche CAR-002 asignado a MecCarr-1 (Carrocería) - Esperó: 0.00s - Trabajo: 10.4s
+Mecánico MecCarr-1 asignado a la incidencia.
+Coche CAR-003 añadido - Mecánicos disponibles: 1
+Coche CAR-003 asignado a MecMotor-1 (Motor) - Esperó: 0.00s - Trabajo: 5.9s
+Mecánico MecMotor-1 asignado a la incidencia.
+Coche CAR-004 añadido - Mecánicos disponibles: 2
+Coche CAR-004 asignado a MecElec-2 (Electricidad) - Esperó: 0.00s - Trabajo: 6.5s
+Mecánico MecElec-2 asignado a la incidencia.
+Coche CAR-005 añadido - Mecánicos disponibles: 2
+Coche CAR-005 asignado a MecCarr-2 (Carrocería) - Esperó: 0.00s - Trabajo: 11.4s
+Mecánico MecCarr-2 asignado a la incidencia.
+Coche CAR-006 en cola de espera (Posición: 1)
+Coche CAR-007 añadido - Mecánicos disponibles: 1
+Coche CAR-007 asignado a MecElec-3 (Electricidad) - Esperó: 0.00s - Trabajo: 7.9s
+Mecánico MecElec-3 asignado a la incidencia.
+Coche CAR-008 añadido - Mecánicos disponibles: 1
+Coche CAR-008 asignado a MecCarr-3 (Carrocería) - Esperó: 0.00s - Trabajo: 11.1s
+Mecánico MecCarr-3 asignado a la incidencia.
+Coche CAR-009 en cola de espera (Posición: 1)
+Coche CAR-010 en cola de espera (Posición: 1)
+Coche CAR-011 en cola de espera (Posición: 1)
+Coche CAR-012 en cola de espera (Posición: 1)
+Coche CAR-013 en cola de espera (Posición: 1)
+Coche CAR-014 en cola de espera (Posición: 1)
+Coche CAR-015 en cola de espera (Posición: 1)
+MecMotor-1 terminó trabajo en CAR-003 (5.9s) - Total coche: 5.9s
+Coche CAR-006 asignado a MecMotor-1 (Motor) - Esperó: 5.61s - Trabajo: 4.4s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecElec-1 terminó trabajo en CAR-001 (6.4s) - Total coche: 6.4s
+Coche CAR-010 asignado a MecElec-1 (Electricidad) - Esperó: 5.49s - Trabajo: 6.5s
+Mecánico MecElec-1 asignado a la incidencia.
+MecElec-2 terminó trabajo en CAR-004 (6.5s) - Total coche: 6.5s
+Coche CAR-013 asignado a MecElec-2 (Electricidad) - Esperó: 5.57s - Trabajo: 7.2s
+Mecánico MecElec-2 asignado a la incidencia.
+MecElec-3 terminó trabajo en CAR-007 (7.9s) - Total coche: 7.9s
+MecCarr-1 terminó trabajo en CAR-002 (10.4s) - Total coche: 10.4s
+Coche CAR-011 asignado a MecCarr-1 (Carrocería) - Esperó: 9.52s - Trabajo: 10.0s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en CAR-006 (4.4s) - Total coche: 4.4s
+Coche CAR-009 asignado a MecMotor-1 (Motor) - Esperó: 9.72s - Trabajo: 4.3s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecCarr-3 terminó trabajo en CAR-008 (11.1s) - Total coche: 11.1s
+Coche CAR-014 asignado a MecCarr-3 (Carrocería) - Esperó: 10.45s - Trabajo: 11.1s
+Mecánico MecCarr-3 asignado a la incidencia.
+MecCarr-2 terminó trabajo en CAR-005 (11.4s) - Total coche: 11.4s
+MecElec-1 terminó trabajo en CAR-010 (6.5s) - Total coche: 6.5s
+MecElec-2 terminó trabajo en CAR-013 (7.2s) - Total coche: 7.2s
+MecMotor-1 terminó trabajo en CAR-009 (4.3s) - Total coche: 4.3s
+Coche CAR-012 asignado a MecMotor-1 (Motor) - Esperó: 13.72s - Trabajo: 5.2s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecMotor-1 terminó trabajo en CAR-012 (5.2s) - Total coche: 5.2s
+Coche CAR-015 asignado a MecMotor-1 (Motor) - Esperó: 18.58s - Trabajo: 5.2s
+Mecánico MecMotor-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en CAR-011 (10.0s) - Total coche: 10.0s
+MecCarr-3 terminó trabajo en CAR-014 (11.1s) - Total coche: 11.1s
+MecMotor-1 terminó trabajo en CAR-015 (5.2s) - Total coche: 5.2s
+    concurrent_workshop_test.go:332: 
+         RESULTADOS - 1 MECÁNICA, 3 ELÉCTRICA, 3 CARROCERÍA:
+    concurrent_workshop_test.go:333:    Tiempo total: 121.60 segundos
+    concurrent_workshop_test.go:334:    Mecánicos totales: 7
+    concurrent_workshop_test.go:335:    Mecánicos contratados: 0
+    concurrent_workshop_test.go:336:    Mecánicos ocupados al final: 0
+    concurrent_workshop_test.go:337:    Mecánicos disponibles: 7
+--- PASS: TestDifferentSpecialityDistribution (243.15s)
+    --- PASS: TestDifferentSpecialityDistribution/3_mecanica_1_electrica_1_carroceria (121.56s)
+    --- PASS: TestDifferentSpecialityDistribution/1_mecanica_3_electrica_3_carroceria (121.60s)
+=== RUN   TestAutoHiringOver15Seconds
+
+======================================================================
+TEST ADICIONAL: CONTRATACIÓN AUTOMÁTICA > 15 SEGUNDOS
+======================================================================
+
+Dispatcher detenido
+Coche TEST-LONG añadido - Mecánicos disponibles: 1
+Dispatcher iniciado - Esperando coches...
+Coche TEST-LONG asignado a MecCarr-1 (Carrocería) - Esperó: 0.00s - Trabajo: 10.8s
+Mecánico MecCarr-1 asignado a la incidencia.
+MecCarr-1 terminó trabajo en TEST-LONG (10.8s) - Total coche: 10.8s
+    concurrent_workshop_test.go:441: 
+         RESULTADOS - CONTRATACIÓN AUTOMÁTICA:
+    concurrent_workshop_test.go:442:    Tiempo total: 25.01 segundos
+    concurrent_workshop_test.go:443:    Mecánicos iniciales: 1
+    concurrent_workshop_test.go:444:    Mecánicos finales: 1
+    concurrent_workshop_test.go:445:    Mecánicos contratados: 0
+    concurrent_workshop_test.go:450:      No se contrataron mecánicos adicionales
+--- PASS: TestAutoHiringOver15Seconds (25.01s)
+Dispatcher detenido
+PASS
+ok  	practica2	664.288s
